@@ -41,7 +41,7 @@ const Navbar = () => {
             <li>
               <Link href="/">Blog</Link>
             </li>
-            <li className="px-3 py-2 rounded-lg bg-blue-600 text-white">
+            <li className="px-3 py-2 text-sm rounded-lg bg-blue-600 text-white">
               Download ZET
             </li>
           </ul>
@@ -71,8 +71,10 @@ const Navbar = () => {
           <li>
             <Link href="/">Blog</Link>
           </li>
-          <li className="px-3 py-2 rounded-lg bg-blue-600 text-white">
-            Download ZET
+          <li>
+            <button className="px-3 text-sm py-2 rounded-lg bg-blue-600 text-white lg:mt-1">
+              Download ZET
+            </button>
           </li>
         </ul>
       </div>

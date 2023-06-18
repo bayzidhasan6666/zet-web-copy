@@ -7,6 +7,9 @@ const Footer = () => {
       style={{
         backgroundImage:
           'url("https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FAboutUs.085fb7a2.png&w=1920&q=100")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
       }}
       className="bg-[#006dfe] h-[500px] md:px-10 lg:px-44 px-5"
     >
@@ -56,7 +59,7 @@ const Footer = () => {
         <div>
           <h1 className="mb-3 text-lg uppercase">Contact</h1>
           <ul>
-            <li className='flex items-center gap-1'>
+            <li className="flex items-center gap-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -73,7 +76,7 @@ const Footer = () => {
               </svg>
               hi@zetapp.in
             </li>
-            <li className='flex items-center gap-1'>
+            <li className="flex items-center gap-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
