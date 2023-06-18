@@ -7,6 +7,7 @@ const ProductsOnZet = () => {
       style={{
         backgroundImage:
           'url("https://zetapp.in/_next/static/media/decImg.ead9275f.svg")',
+        backgroundRepeat: 'no-repeat',
       }}
       className="my-20 bg-[#eaf4ff] h-fit md:p-10 p-2"
     >

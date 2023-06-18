@@ -8,6 +8,8 @@ const EasySteps = () => {
         clipPath: 'polygon(0 20%, 100% 0, 100% 80%, 0% 100%)',
         backgroundImage:
           'url("https://zetapp.in/_next/static/media/earningDec.b2e9943b.svg")',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
       }}
     >
       <div className="text-center text-white relative top-40 md:top-28 lg:top-44">

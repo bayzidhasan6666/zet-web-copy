@@ -40,6 +40,8 @@ const WhyChooseUs = () => {
         style={{
           backgroundImage:
             'url("https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FbgImg.0b567eb7.png&w=256&q=75")',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
         }}
       >
         <div className=" mb-32">
@@ -49,7 +51,7 @@ const WhyChooseUs = () => {
           <p className="">Why we are loved by our customers</p>
         </div>
         <img
-        className='hidden md:flex relative bottom-20'
+          className="hidden md:flex relative bottom-20"
           src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FwhyUsHero.76b303ee.png&w=384&q=75"
           alt=""
         />
@@ -57,7 +59,11 @@ const WhyChooseUs = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {allData.map((data, index) => (
           <div className="lg:w-12/12 text-center md:text-start" key={index}>
-            <img className='flex md:inline-block mx-auto' src={data.img} alt="" />
+            <img
+              className="flex md:inline-block mx-auto"
+              src={data.img}
+              alt=""
+            />
             <h1 className="font-semibold text-lg">{data.title}</h1>
             <p>{data.description}</p>
           </div>
