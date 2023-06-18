@@ -46,11 +46,14 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <img
-          className="ml-5 md:ml-0 md:w-14 lg:w-20"
-          src="https://zetapp.in/_next/static/media/zet_new_logo.7adcc993.svg"
-          alt="Logo"
-        />
+        <Link href={'/'}>
+          {' '}
+          <img
+            className="ml-5 md:ml-0 md:w-14 lg:w-20"
+            src="https://zetapp.in/_next/static/media/zet_new_logo.7adcc993.svg"
+            alt="Logo"
+          />
+        </Link>
       </div>
       <div className="navbar-center hidden md:flex">
         <ul className="menu menu-horizontal px-1 lg:text-lg">
