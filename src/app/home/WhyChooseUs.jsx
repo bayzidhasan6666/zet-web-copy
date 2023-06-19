@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../components/FadeAnime.css'
 
 const WhyChooseUs = () => {
   const allData = [
@@ -34,9 +35,9 @@ const WhyChooseUs = () => {
     },
   ];
   return (
-    <div className="md:flex gap-20 items-center px-5 md:px-10 lg:w-[1050px] mx-auto">
+    <div className="md:flex gap-20 items-center px-5 md:px-10 lg:w-[1050px] mx-auto fade-up-container">
       <div
-        className="text-center w-96"
+        className="text-center w-96  fade-up-container"
         style={{
           backgroundImage:
             'url("https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FbgImg.0b567eb7.png&w=256&q=75")',
@@ -44,7 +45,7 @@ const WhyChooseUs = () => {
           backgroundPosition: 'center',
         }}
       >
-        <div className=" mb-32">
+        <div className=" mb-32  fade-up-container">
           <h1 className="font-bold text-xl">
             Why <span className="text-[#1461ca]">Choose Us</span>
           </h1>
@@ -56,9 +57,12 @@ const WhyChooseUs = () => {
           alt=""
         />
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10  fade-up-container">
         {allData.map((data, index) => (
-          <div className="lg:w-12/12 text-center md:text-start" key={index}>
+          <div
+            className="lg:w-12/12 text-center md:text-start  fade-up-container"
+            key={index}
+          >
             <img
               className="flex md:inline-block mx-auto"
               src={data.img}

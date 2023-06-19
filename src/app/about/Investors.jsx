@@ -1,5 +1,6 @@
 import React from 'react';
 import './Founders.css'
+import '../../components/FadeAnime.css';
 
 const Investors = () => {
   const images = [
@@ -60,10 +61,10 @@ const Investors = () => {
   ];
   return (
     <div className="my-10">
-      <h1 className="font-bold text-2xl lg:text-3xl px-2 md:px-10 lg:px-32">
+      <h1 className="font-bold text-2xl lg:text-3xl px-2 md:px-10 lg:px-32 fade-up-container">
         Meet the Investors
       </h1>
-      <div className="grid grid-cols-3 lg:grid-cols-4 lg:w-[90%] mx-auto gap-10 my-10 md:px-10 px-2 lg:px-32">
+      <div className="grid grid-cols-3 lg:grid-cols-4 lg:w-[90%] mx-auto gap-10 my-10 md:px-10 px-2 lg:px-32 fade-up-container">
         {images.map((image, index) => (
           <div className="founders-card" key={index}>
             <img
