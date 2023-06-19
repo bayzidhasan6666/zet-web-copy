@@ -16,7 +16,7 @@ const ProductsOnZet = () => {
         <p>We are trusted by the best brands in the country.</p>
       </div>
       <div className="grid lg:grid-cols-2 gap-3 md:gap-10 lg:w-[1050px] mx-auto">
-        <div className="md:flex items-center justify-center gap-10 bg-[#edffec] rounded-xl px-8 md:py-10 py-5 transition-all shadow hover:shadow-2xl hover:scale-105 hover:wave-animation">
+        <div className="md:flex items-center justify-center gap-10 bg-[#edffec] rounded-xl px-8 md:py-10 py-5 transition-all shadow hover:shadow-2xl hover:scale-105 hover:wave-animation hover:bg-white">
           <div>
             <img
               className="w-64"
@@ -32,7 +32,7 @@ const ProductsOnZet = () => {
             </p>
           </div>
         </div>
-        <div className="md:flex items-center justify-center gap-10 bg-[#fff1ca] rounded-xl px-8 md:py-10 py-5 transition-all shadow hover:shadow-2xl hover:scale-105 hover:wave-animation">
+        <div className="md:flex items-center justify-center gap-10 bg-[#fff1ca] rounded-xl px-8 md:py-10 py-5 transition-all shadow hover:shadow-2xl hover:scale-105 hover:wave-animation hover:bg-white">
           <div>
             <img
               className="w-64"
@@ -48,7 +48,7 @@ const ProductsOnZet = () => {
             </p>
           </div>
         </div>
-        <div className="md:flex items-center justify-center gap-10 bg-[#ffeee7] rounded-xl px-8 md:py-10 py-5 transition-all shadow hover:shadow-2xl hover:scale-105 hover:wave-animation">
+        <div className="md:flex items-center justify-center gap-10 bg-[#ffeee7] rounded-xl px-8 md:py-10 py-5 transition-all shadow hover:shadow-2xl hover:scale-105 hover:wave-animation hover:bg-white">
           <div>
             <img
               className="w-64"
@@ -64,7 +64,7 @@ const ProductsOnZet = () => {
             </p>
           </div>
         </div>
-        <div className="md:flex items-center justify-center gap-10 bg-[#fff5e7] rounded-xl px-8 md:py-10 py-5 transition-all shadow hover:shadow-2xl hover:scale-105 hover:wave-animation">
+        <div className="md:flex items-center justify-center gap-10 bg-[#fff5e7] rounded-xl px-8 md:py-10 py-5 transition-all shadow hover:shadow-2xl hover:scale-105 hover:wave-animation hover:bg-white">
           <div>
             <img
               className="w-64"

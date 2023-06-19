@@ -1,4 +1,5 @@
 import React from 'react';
+import './Founders.css'
 
 const Investors = () => {
   const images = [
@@ -58,28 +59,35 @@ const Investors = () => {
     },
   ];
   return (
-    <div className='my-10'>
+    <div className="my-10">
       <h1 className="font-bold text-2xl lg:text-3xl px-2 md:px-10 lg:px-32">
         Meet the Investors
       </h1>
-      <div className="grid  grid-cols-3 lg:grid-cols-4 lg:w-[90%] mx-auto gap-10 my-10 md:px-10 px-2 lg:px-32">
+      <div className="grid grid-cols-3 lg:grid-cols-4 lg:w-[90%] mx-auto gap-10 my-10 md:px-10 px-2 lg:px-32">
         {images.map((image, index) => (
-          <div className="" key={index}>
+          <div className="founders-card" key={index}>
             <img
-              className="lg:w-[200px] lg:h-[120px] md:w-52"
+              className="lg:w-[200px] lg:h-[120px] md:w-52 founders-card-inner"
               src={image.img}
               alt=""
             />
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-3 lg:grid-cols-4 lg:w-[90%] mx-auto gap-10  md:px-10 px-2 lg:px-32">
+      <div className="grid grid-cols-3 lg:grid-cols-4 lg:w-[90%] mx-auto gap-10 md:px-10 px-2 lg:px-32">
         {investors.map((investor, index) => (
-          <div className="space-y-1 " key={index}>
-            <img className="lg:w-[200px]  md:w-52 mb-3" src={investor.img} alt="" />
-              <h2 className="text-lg ">{investor.name}</h2>
+          <div className="space-y-1 founders-card" key={index}>
+            <img
+              className="lg:w-[200px] md:w-52 mb-3 founders-card-inner"
+              src={investor.img}
+              alt=""
+            />
+            <div className='founders-content'>
+              {' '}
+              <h2 className="text-lg">{investor.name}</h2>
               <h2 className="text-gray-500">{investor.title}</h2>
             </div>
+          </div>
         ))}
       </div>
     </div>

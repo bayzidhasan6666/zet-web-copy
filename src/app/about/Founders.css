@@ -1,0 +1,20 @@
+.founders-card {
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.founders-card-inner {
+  transition: transform 0.3s ease;
+}
+
+.founders-card:hover .founders-card-inner {
+  transform: scale(1.05);
+}
+
+.founders-content {
+  transition: transform 0.3s ease;
+}
+
+.founders-card:hover .founders-content {
+  transform: translateX(5%);
+}
