@@ -3,19 +3,17 @@ import TopBrands from './TopBrands';
 import ProductsOnZet from './ProductsOnZet';
 import WhyChooseUs from './WhyChooseUs';
 import ZEffect from './ZEffect';
-import EasySteps from './EasySteps';
-import Slider from '@/components/Slider';
+import StepsSlider from './StepsSlider';
 
 const Home = () => {
   return (
     <div>
       <Banner></Banner>
-      <Slider></Slider>
       <TopBrands></TopBrands>
       <ProductsOnZet></ProductsOnZet>
       <ZEffect></ZEffect>
       <WhyChooseUs></WhyChooseUs>
-      <EasySteps></EasySteps>
+      <StepsSlider></StepsSlider>
     </div>
   );
 };

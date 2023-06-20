@@ -4,8 +4,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css/bundle';
-import { Autoplay, EffectFade } from 'swiper';
-import SingleSlider from '@/components/SingleSlider';
+import { Autoplay } from 'swiper';
+import SingleSlider from '@/app/home/SingleSlider';
 import ZSlider from '@/data/ZSlider';
 
 const ZEffect = () => {
