@@ -1,8 +1,19 @@
-
+'use client';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Evolved = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
-    <div className="my-10 space-y-7 px-2 md:px-16 lg:px-[250px]">
+    <div
+      data-aos="fade-left"
+      className="my-10 space-y-7 px-2 md:px-16 lg:px-[250px]"
+    >
       <h1 className="text-2xl font-bold text-center mb-12">
         How we evolved over the years
       </h1>

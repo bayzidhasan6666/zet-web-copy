@@ -1,7 +1,16 @@
+'use client';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-import '../../components/FadeAnime.css'
+import '../../components/FadeAnime.css';
 
 const WhyChooseUs = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   const allData = [
     {
       img: 'https://zetapp.in/_next/static/media/zero_investment.d5743aab.svg',
@@ -35,7 +44,10 @@ const WhyChooseUs = () => {
     },
   ];
   return (
-    <div className="md:flex gap-20 items-center px-5 md:px-10 lg:w-[1050px] mx-auto fade-up-container">
+    <div
+      data-aos="fade-up"
+      className="md:flex gap-20 items-center px-5 md:px-10 lg:w-[1050px] mx-auto fade-up-container"
+    >
       <div
         className="text-center w-96  fade-up-container"
         style={{

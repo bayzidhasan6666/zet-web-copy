@@ -1,6 +1,15 @@
+'use client';
 
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Featured = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   const company = [
     {
       img: 'https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FEconomicTimes.5724030e.png&w=640&q=75',
@@ -18,9 +27,9 @@ const Featured = () => {
       img: 'https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FBusinessStandard.047c592d.png&w=640&q=75',
     },
   ];
- 
+
   return (
-    <>
+    <div data-aos="fade-right">
       <h1 className="font-bold text-2xl lg:text-3xl px-2 md:px-10 lg:px-32">
         Got Featured
       </h1>
@@ -35,8 +44,7 @@ const Featured = () => {
           </div>
         ))}
       </div>
-   
-    </>
+    </div>
   );
 };
 

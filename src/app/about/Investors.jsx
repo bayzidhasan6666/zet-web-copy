@@ -1,7 +1,16 @@
-import './Founders.css'
+'use client';
+import './Founders.css';
 import '../../components/FadeAnime.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Investors = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   const images = [
     {
       img: 'https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FInvCompany1.41d5c5bd.png&w=640&q=75',
@@ -63,7 +72,10 @@ const Investors = () => {
       <h1 className="font-bold text-2xl lg:text-3xl px-2 md:px-10 lg:px-32 fade-up-container">
         Meet the Investors
       </h1>
-      <div className="grid grid-cols-3 lg:grid-cols-4 lg:w-[90%] mx-auto gap-10 my-10 md:px-10 px-2 lg:px-32 fade-up-container">
+      <div
+        data-aos="fade-up"
+        className="grid grid-cols-3 lg:grid-cols-4 lg:w-[90%] mx-auto gap-10 my-10 md:px-10 px-2 lg:px-32 fade-up-container"
+      >
         {images.map((image, index) => (
           <div className="founders-card" key={index}>
             <img
@@ -74,15 +86,22 @@ const Investors = () => {
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-3 lg:grid-cols-4 lg:w-[90%] mx-auto gap-10 md:px-10 px-2 lg:px-32">
+      <div
+        data-aos="fade-up"
+        className="grid grid-cols-3 lg:grid-cols-4 lg:w-[90%] mx-auto gap-10 md:px-10 px-2 lg:px-32"
+      >
         {investors.map((investor, index) => (
-          <div className="space-y-1 founders-card" key={index}>
+          <div
+            data-aos="fade-up"
+            className="space-y-1 founders-card"
+            key={index}
+          >
             <img
               className="lg:w-[200px] md:w-52 mb-3 founders-card-inner"
               src={investor.img}
               alt=""
             />
-            <div className='founders-content'>
+            <div className="founders-content">
               {' '}
               <h2 className="text-lg">{investor.name}</h2>
               <h2 className="text-gray-500">{investor.title}</h2>
