@@ -1,5 +1,5 @@
 import React from 'react';
-import './Founders.css'
+import './Founders.css';
 import '../../components/FadeAnime.css';
 
 const Founders = () => {
@@ -32,9 +32,9 @@ const Founders = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mx-auto w-[90%] py-10 md:px-10 px-2 lg:px-32 lg:ml-40 fade-up-container">
         {founders.map((founder, index) => (
           <div className="w-fit founders-card fade-up-container" key={index}>
-            <div className="founders-card-inner">
+            <div className="">
               <img
-                className="lg:w-[200px] md:w-52 mb-3"
+                className="lg:w-[200px] md:w-52 mb-3 founders-card-inner"
                 src={founder.img}
                 alt=""
               />
