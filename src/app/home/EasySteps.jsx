@@ -1,7 +1,7 @@
 const EasySteps = ({ slider, index }) => {
   return (
-    <div className=" ml-10 md:flex gap-5 justify-center items-center lg:mt-32 lg:gap-20">
-      <div className="space-y-4 md:w-1/2 mt-44 md:mt-0 w-fit ">
+    <div className=" ml-10 flex gap-5 md:flex-row flex-col-reverse justify-center  items-center lg:mt-32 lg:gap-20">
+      <div className="space-y-4 md:w-1/2 mt-10 md:mt-0 w-fit ">
         <button
           className="w-28 h-10 rounded-r-lg font-bold text-white bg-[#538bff] "
           style={{

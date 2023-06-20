@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './Founders.css';
 import '../../components/FadeAnime.css';
 

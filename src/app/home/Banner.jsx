@@ -1,10 +1,10 @@
-import React from 'react';
+
 import '../../components/FadeAnime.css';
 const Banner = () => {
   return (
-    <div className="md:flex mt-10 md:mt-20 h-80 justify-between items-center md:w-10/12 lg:w-8/12 mx-auto bg-[#e9f4ff] px-5 py-10 md:p-10 rounded-lg fade-up-container">
+    <div className="md:flex mt-10 md:mt-20 h-96 justify-between items-center md:w-10/12 lg:w-8/12 md:mx-auto bg-[#e9f4ff] px-5 mx-2 py-2 md:px-5 lg:px-10 rounded-lg fade-up-container">
       <div className="lg:w-7/12 md:w-full space-y-3 md:text-start text-center">
-        <h1 className="text-4xl font-bold">
+        <h1 className="text-[40px] font-bold">
           Become a Financial Advisor{' '}
           <span className="text-[#264eff]">and Earn Rs.1 Lakh/Month</span>
         </h1>

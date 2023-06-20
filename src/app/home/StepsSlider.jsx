@@ -10,13 +10,14 @@ import StepsData from '@/data/StepsData';
 const StepsSlider = () => {
   return (
     <div
-      className="lg:h-[1100px] md:h-[700px] h-[850px] bg-[#0a2540] lg:px-40"
+      className="lg:h-[1100px] md:h-[700px] h-[900px] bg-[#0a2540] lg:px-40 "
       style={{
         clipPath: 'polygon(0 20%, 100% 0, 100% 80%, 0% 100%)',
         backgroundImage:
           'url("https://zetapp.in/_next/static/media/earningDec.b2e9943b.svg")',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
+        
       }}
     >
       <div className="text-white text-center md:text-start relative top-40 md:top-28 lg:top-44">

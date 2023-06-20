@@ -1,4 +1,4 @@
-import React from 'react';
+
 import '../../components/FadeAnime.css'
 
 const WhyChooseUs = () => {

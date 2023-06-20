@@ -1,4 +1,3 @@
-import React from 'react';
 import Link from 'next/link';
 
 const Footer = () => {
@@ -23,7 +22,7 @@ const Footer = () => {
       <div className="grid grid-cols-3 md:grid-cols-4 text-white mt-10 gap-5">
         <div>
           <h1 className="mb-3 text-lg uppercase">Company</h1>
-          <ul className='space-y-2'>
+          <ul className="space-y-2">
             <li>
               <Link href="/about">
                 <span>About Us</span>
@@ -43,7 +42,7 @@ const Footer = () => {
         </div>
         <div>
           <h1 className="mb-3 text-lg uppercase">Legal</h1>
-          <ul className='space-y-2'>
+          <ul className="space-y-2">
             <li>
               <Link href="/privacy">
                 <span>Privacy Policy</span>
@@ -58,7 +57,7 @@ const Footer = () => {
         </div>
         <div>
           <h1 className="mb-3 text-lg uppercase">Contact</h1>
-          <ul className='space-y-2'>
+          <ul className="space-y-2">
             <li className="flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
