@@ -1,13 +1,14 @@
-import React from 'react';
+'use client';
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css/bundle';
+import { Autoplay, EffectFade } from 'swiper';
+import SingleSlider from '@/components/SingleSlider';
+import ZSlider from '@/data/ZSlider';
 
 const ZEffect = () => {
-  const allData = [
-    {
-      title: 'THE ZET EFFECT',
-      subtitle:
-        '14 Lakh+ Financial Advisor across India are using ZET to increase their income',
-    },
-  ];
   return (
     <div
       className="bg-[#145cc5] h-[400px] md:h-[500px] lg:h-[800px] w-full"
@@ -19,19 +20,28 @@ const ZEffect = () => {
           clipPath: 'polygon(0 30%, 100% 0, 100% 70%, 0% 100%)',
         }}
       >
-        <div>
+        <div className="flex justify-between">
           <img
             className="relative top-24 hidden lg:flex"
             src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpeeps1.2a271552.png&w=750&q=75"
             alt=""
           />
         </div>
-        <div className="relative top-44 font-bold text-white text-xl">
-          <h1>THE ZET EFFECT</h1>
-          <h2 className="text-2xl mt-3">
-            14 Lakh+ Financial Advisor across india are using ZET to increase
-            there income
-          </h2>
+        <div className="relative top-44 font-bold text-white text-xl w-1/2">
+          <h1 className='mb-2'>THE ZET EFFECT</h1>
+          <Swiper
+            spaceBetween={50}
+            slidesPerView={1}
+            loop
+            autoplay
+            modules={[ Autoplay]}
+          >
+            {ZSlider.map((slider, index) => (
+              <SwiperSlide key={index}>
+                <SingleSlider slider={slider}></SingleSlider>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
       <div
@@ -41,19 +51,28 @@ const ZEffect = () => {
         }}
       >
         {' '}
-        <div className="">
+        <div className="flex justify-between">
           <img
             className="relative top-36 hidden md:flex"
             src="https://zetapp.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpeeps1.2a271552.png&w=750&q=75"
             alt=""
           />
         </div>
-        <div className="relative top-32 font-bold text-white text-xl">
-          <h1>THE ZET EFFECT</h1>
-          <h2 className="text-2xl mt-3">
-            14 Lakh+ Financial Advisor across india are using ZET to increase
-            there income
-          </h2>
+        <div className="relative top-32 font-bold text-white text-xl w-96">
+          <h1 className='mb-2'>THE ZET EFFECT</h1>
+          <Swiper
+            spaceBetween={50}
+            slidesPerView={1}
+            loop
+            autoplay
+            modules={[Autoplay]}
+          >
+            {ZSlider.map((slider, index) => (
+              <SwiperSlide key={index}>
+                <SingleSlider slider={slider}></SingleSlider>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
       <div
@@ -64,11 +83,20 @@ const ZEffect = () => {
       >
         {' '}
         <div className=" relative top-20 ml-5 font-bold text-white text-xl">
-          <h1>THE ZET EFFECT</h1>
-          <h2 className="text-2xl mt-3">
-            14 Lakh+ Financial Advisor across india are using ZET to increase
-            there income
-          </h2>
+          <h1 className='mb-2'>THE ZET EFFECT</h1>
+          <Swiper
+            spaceBetween={50}
+            slidesPerView={1}
+            loop
+            autoplay
+            modules={[ Autoplay]}
+          >
+            {ZSlider.map((slider, index) => (
+              <SwiperSlide key={index}>
+                <SingleSlider slider={slider}></SingleSlider>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </div>
